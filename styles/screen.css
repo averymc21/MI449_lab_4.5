@@ -1,6 +1,13 @@
+
+:root  {
+ --averys_favorite_color: pink; 
+}
+
+
+
 body {
     font-family: Helvetica, sans-serif;
-    color: #EAE8FF;
+    color: var(--averys_favorite_color);
     background: #2D3142;
     padding: 0 40px;
     text-align: center;
@@ -47,4 +54,8 @@ h1 strong {
 
 img.about {
     opacity: 0.5;
+}
+
+.module {
+    color: var(--averys_favorite_color);
 }
