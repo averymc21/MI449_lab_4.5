@@ -58,4 +58,7 @@ img.about {
 
 .module {
     color: var(--averys_favorite_color);
+    grid-template-columns: 200px 200px 200px;
+    grid-auto-rows: 100px;
+    gap: 20px;
 }
