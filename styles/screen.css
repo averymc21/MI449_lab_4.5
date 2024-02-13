@@ -63,7 +63,8 @@ main {
 .circle {
     width: 100px; 
     height: 100px; 
-    border-radius: 50%; 
+    border-radius: 50%;
+    transition: transform 0.3s ease; 
 }
 
 .circle.sun {
@@ -142,4 +143,8 @@ main {
 .neptune .circle { 
     background: var(--neptune-gradient);
     border: 2px solid rgba(0,0,139,0.8); 
+}
+
+.module:hover .circle {
+    transform: scale(1.2); 
 }
