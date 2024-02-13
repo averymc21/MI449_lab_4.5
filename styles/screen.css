@@ -1,9 +1,6 @@
-
-:root  {
- --averys_favorite_color: pink; 
+:root {
+    --averys_favorite_color: pink;
 }
-
-
 
 body {
     font-family: Helvetica, sans-serif;
@@ -13,52 +10,29 @@ body {
     text-align: center;
 }
 
-nav {
-    margin: 40px auto 0 auto;
-    width: 250px;
-    border-radius: 50px;
-    background: #212431;
-}
-
-nav ul {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    list-style-type: none;
-    margin: 0;
-}
-
-nav ul li a {
-    display: inline-block;
-    padding: 20px;
-    color: #EAE8FF;
-    text-decoration: none;
-    font-size: 1.2em;
-}
-
 h1 {
-    font-size: 8em;
+    margin-left: 10px;
+    text-align: left;
+    font-size: 7em;
     letter-spacing: -2px;
+    color: pink;
 }
 
-h1 strong {
-    background: rgb(34,193,195);
-    background: linear-gradient(45deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-img.about {
-    opacity: 0.5;
+main {
+    margin-top: 50px;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* Adjust the number of columns as needed */
+    grid-auto-rows: 300px;
+    gap: 40px;
 }
 
 .module {
-    color: var(--averys_favorite_color);
-    grid-template-columns: 200px 200px 200px;
-    grid-auto-rows: 100px;
-    gap: 20px;
+    background-color: pink;
+    border-radius: 20px;
+}
+
+.module.sun {
+    grid-column: span 2; /* Make the Sun module span 2 columns */
+    grid-row: span 2; /* Make the Sun module span 2 rows */
 }
