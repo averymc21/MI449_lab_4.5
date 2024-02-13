@@ -63,7 +63,6 @@ main {
 .circle {
     width: 100px; 
     height: 100px; 
-    background-color: white;
     border-radius: 50%; 
 }
 
@@ -84,12 +83,12 @@ main {
 .text.sun {
     margin-top: 20x; 
     font-size: 2em; 
-    color: white; 
+    color: #2D3142; 
 }
 
 .planet-name {
     font-size: 1.2em; 
-    color: white; 
+    color: #2D3142; 
     font-weight: 800 ;
 }
 
@@ -98,7 +97,7 @@ main {
     padding-left: 10px;
     padding-right: 10px ;
     font-size: 0.8em; 
-    color: white; 
+    color: #2D3142; 
 }
 
 .circle.sun { 
