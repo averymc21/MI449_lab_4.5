@@ -1,5 +1,23 @@
 :root {
     --averys_favorite_color: pink;
+    --sun-color: #ffd700;
+    --mercury-color: #848484;
+    --venus-color: #F4A460;
+    --earth-color: #4682B4;
+    --mars-color: #FF6347;
+    --jupiter-color: #D2691E;
+    --saturn-color: #DAA520;
+    --uranus-color: #00FFFF;
+    --neptune-color: #00008B;
+    --uranus-gradient: linear-gradient(to bottom, rgba(0,255,255,0.8), rgba(0,0,255,0.2));
+    --neptune-gradient: linear-gradient(to bottom, rgba(0,0,139,0.8), rgba(0,0,255,0.2));
+    --sun-gradient: radial-gradient(circle, #FFD700 30%, #FFA500 100%);
+    --mercury-gradient: radial-gradient(circle, #848484 30%, #555555 100%);
+    --venus-gradient: radial-gradient(circle, #F4A460 30%, #FFD700 100%);
+    --earth-gradient: radial-gradient(circle, #4682B4 30%, #87CEEB 100%);
+    --mars-gradient: radial-gradient(circle, #FF6347 30%, #CD5C5C 100%);
+    --jupiter-gradient: radial-gradient(circle, #D2691E 30%, #8B4513 100%);
+    --saturn-gradient: radial-gradient(circle, #DAA520 30%, #FFD700 100%);
 }
 
 body {
@@ -15,21 +33,21 @@ h1 {
     text-align: left;
     font-size: 7em;
     letter-spacing: -2px;
-    color: pink;
+    color: white;
 }
 
 main {
     margin-top: 50px;
     margin-bottom: 40px;
     display: grid;
-    grid-template-columns: repeat(6, 1fr); /* Adjust the number of columns as needed */
+    grid-template-columns: repeat(6, 1fr); 
     grid-auto-rows: 300px;
     gap: 40px;
 }
 
 .module {
-    position: relative; /* Ensure proper positioning of child elements */
-    background-color: pink;
+    position: relative; 
+    background-color: lightgrey;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -38,33 +56,91 @@ main {
 }
 
 .module.sun {
-    grid-column: span 2; /* Make the Sun module span 2 columns */
-    grid-row: span 2; /* Make the Sun module span 2 rows */
+    grid-column: span 2; 
+    grid-row: span 2; 
 }
 
 .circle {
-    width: 100px; /* Adjust size as needed */
-    height: 100px; /* Adjust size as needed */
+    width: 100px; 
+    height: 100px; 
     background-color: white;
-    border-radius: 50%; /* Creates the circular shape */
+    border-radius: 50%; 
 }
 
 .circle.sun {
-    width: 200px; /* Adjust size as needed */
-    height: 200px; /* Adjust size as needed */
+    width: 300px; 
+    height: 300px; 
     background-color: white;
-    border-radius: 50%; /* Creates the circular shape */
+    border-radius: 50%; 
 
 }
 
 .text {
-    margin-top: 10px; /* Adjust spacing between circle and text */
-    font-size: 1.2em; /* Adjust font size */
-    color: white; /* Adjust text color */
+    margin-top: 20px; 
+    font-size: 1.2em; 
+    color: #2D3142; 
 }
 
-.text {
-    margin-top: 10px; /* Adjust spacing between circle and text */
-    font-size: 1.5em; /* Adjust font size */
-    color: white; /* Adjust text color */
+.text.sun {
+    margin-top: 20x; 
+    font-size: 2em; 
+    color: white; 
+}
+
+.planet-name {
+    font-size: 1.2em; 
+    color: white; 
+    font-weight: 800 ;
+}
+
+.additional-info {
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px ;
+    font-size: 0.8em; 
+    color: white; 
+}
+
+.circle.sun { 
+    background: var(--sun-gradient); 
+    border: 2px solid var(--sun-color)
+}
+.circle.mercury { 
+    background: var(--mercury-gradient);
+    border: 2px solid var(--mercury-color);
+
+}
+
+.circle.venus { 
+    background: var(--venus-gradient); 
+    border: 2px solid var(--venus-color) 
+}
+
+
+.circle.earth {
+     background: var(--earth-gradient); 
+     border: 2px solid var(--earth-color);
+    
+    }
+
+.circle.mars { 
+    background: var(--mars-gradient); 
+    border: 2px solid var(--mars-gradient);
+}
+.circle.jupiter { 
+    background: var(--jupiter-gradient); 
+    border: 2px solid var(--jupiter-color);
+}
+
+.circle.saturn { 
+    background: var(--saturn-gradient);
+    border: 2px solid var(--saturn-color);
+}
+.uranus .circle { 
+    background: var(--uranus-gradient);
+    border: 2px solid rgba(0,255,255,0.8); 
+}
+.neptune .circle { 
+    background: var(--neptune-gradient);
+    border: 2px solid rgba(0,0,139,0.8); 
 }
